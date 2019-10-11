@@ -8,7 +8,7 @@
     "helio": "node server.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "Helio",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1"
