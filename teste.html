@@ -9,6 +9,9 @@
             body{
                 background: rgb(64, 40, 70);
             }
+            #cont{
+                color: white;
+            }
             h1{
                 color: white;
                 border-left: 6px solid blueviolet;
@@ -26,7 +29,7 @@
             }
         </style>
     </head>
-    <body>
+    <body onclick="clicou()">
         <SCRIPT LANGUAGE="JavaScript1.2">
             <!-- Begin
             function BrowserCheck() {
@@ -119,7 +122,15 @@
             up = false;
                }
             }
+            
+            let contagem = 0
+            function clicou(){
+                var saida = document.getElementById('cont')
+                saida.innerHTML = `Usuario clicou: ${contagem} vezes.`
+                contagem++
+            }
             // End -->
             </script>
+            <p id="cont"></p>
     </body>
 </html>
