@@ -29,7 +29,7 @@
             }
         </style>
     </head>
-    <body onclick="clicou()">
+    <body onclick="clicou(), nome()">
         <SCRIPT LANGUAGE="JavaScript1.2">
             <!-- Begin
             function BrowserCheck() {
@@ -130,6 +130,9 @@
                 contagem++
             }
             // End -->
+            function nome(){
+                let nome = window.prompet('Qual o seu nome: ')
+            }
             </script>
             <p id="cont"></p>
     </body>
