@@ -29,8 +29,18 @@
             }
         </style>
     </head>
-    <body onclick="clicou(), nome()">
-        <SCRIPT LANGUAGE="JavaScript1.2">
+    <body onclick="clicou(), teste()">
+        <SCRIPT>//LANGUAGE="JavaScript1.2">
+    
+        function teste(){
+            var corpo = document.querySelector("p#bt")
+            var bt = document.createElement("input")
+            bt.setAttributes('type','button')
+            bt.setAttributes('value','Mudar')
+            corpo.appendChild(bt)
+        }
+            
+            //---------------------------------------------------
             <!-- Begin
             function BrowserCheck() {
             var b = navigator.appName;2
@@ -50,10 +60,11 @@
             this.min = (this.NS||this.IE);
             }
             is = new BrowserCheck();
-            //  End -->
+            //  End : Alterações abaixo -->
             function nome(){
                 let nome = window.prompt('Qual o seu nome:')
             }
+            
             </script>
             
             
@@ -135,5 +146,6 @@
             // End -->
             </script>
             <p id="cont"></p>
+            <p id="bt"></p>
     </body>
 </html>
